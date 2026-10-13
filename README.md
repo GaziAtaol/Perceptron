@@ -1,4 +1,4 @@
-# Perceptron Classifier – Iris-setosa
+# Perceptron Classifier with Iris setosa
 
 A simple single-layer **Perceptron** implemented from scratch in Python that performs binary classification on the classic **Iris dataset**, distinguishing *Iris-setosa* from all other species.
 
@@ -39,7 +39,7 @@ The perceptron learns a linear decision boundary using the **Delta (Widrow-Hoff)
 
 ## Data Format
 
-Each line in a data file is tab-separated and contains four numeric attributes followed by the class label:
+Each line in a data file is tab separated and contains four numeric attributes followed by the class label:
 
 ```
 5,4    3,7    1,5    0,2    Iris-setosa
@@ -90,7 +90,7 @@ The program will:
 
 ```
 =======================================================
-MPP2 Perceptron Classifier (Iris-setosa)
+MPP2 Perceptron Classifier (Iris setosa)
 =======================================================
 
  Training file : iris_training.txt
@@ -155,10 +155,10 @@ All tuneable constants are at the top of `main.py`:
 
 | Module          | Responsibility |
 |-----------------|----------------|
-| `perceptron.py` | `Perceptron` class – computes net input (`net`), binary output (`step`), and performs a single weight update (`update`) |
+| `perceptron.py` | `Perceptron` class computes net input (`net`), binary output (`step`), and performs a single weight update (`update`) |
 | `trainer.py`    | Runs the full training loop over the dataset until convergence or max iterations |
-| `evaluator.py`  | Iterates over the test set, prints per-sample results, and reports overall accuracy |
-| `data_loader.py`| Parses tab-separated files, normalises labels, and converts them to binary targets |
+| `evaluator.py`  | Iterates over the test set, prints per sample results, and reports overall accuracy |
+| `data_loader.py`| Parses tab separated files, normalises labels, and converts them to binary targets |
 | `main.py`       | Orchestrates loading, training, evaluation, and the interactive classification loop |
 
 ---
